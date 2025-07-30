@@ -32,20 +32,20 @@ function App() {
             <Authentication>
               <HotelDetails />
             </Authentication>} />
-            <Route path='/BookingDetails/:id' element={
-              
-              <Authentication>
-                <BookingDetails/>
-                </Authentication>}></Route>
+          <Route path='/BookingDetails/:id' element={
 
-                     <Route path='/MyBookings' element={
-              
-              <Authentication>
-                <MyBookings/>
-                </Authentication>}></Route>
+            <Authentication>
+              <BookingDetails />
+            </Authentication>}></Route>
+
+          <Route path='/MyBookings' element={
+
+            <Authentication>
+              <MyBookings />
+            </Authentication>}></Route>
 
 
-
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </IsLogged>
     </>
