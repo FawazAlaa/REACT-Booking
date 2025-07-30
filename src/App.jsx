@@ -11,6 +11,7 @@ import { Toaster } from 'react-hot-toast'
 import HotelDetails from './HotelDetails/HotelDetails'
 import BookingDetails from './Pages/BookingDetails/BookingDetails'
 import MyBookings from './Pages/MyBookings/MyBookings'
+import NotFound from './Pages/NotFound/NotFound'
 
 function App() {
 
@@ -45,7 +46,7 @@ function App() {
             </Authentication>}></Route>
 
 
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </IsLogged>
     </>
