@@ -10,7 +10,7 @@ import { Store } from './Store/Store.js'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={Store}>
-      <BrowserRouter>
+      <BrowserRouter basename="/REACT-Booking">
         <App />
       </BrowserRouter>
     </Provider>
